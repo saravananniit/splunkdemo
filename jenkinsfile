@@ -1,5 +1,8 @@
 	pipeline {
 	    agent any
+             tools {
+        		maven 'Maven 3.9.9' // Name must match the one in Jenkins Global Tool Configuration
+    		   }
 	    stages {
 	        stage('Clean') {
 	            steps {
